@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request Project | Creative Click Multimedia</title>
+<meta name="description" content="Submit your startup project brief through our step-based onboarding form." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: {} } };</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="site-nav"></header>
+
+<div class="page-fade">
+<main class="relative z-10">
+
+  <section data-nav-theme="dark" class="relative bg-black text-white overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-45" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-40 md:pt-56 pb-16 md:pb-24 min-h-[62vh] flex flex-col justify-end">
+      <span class="inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-widest font-semibold text-white/70"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Project request</span>
+      <h1 class="mt-4 font-light tracking-[-0.03em] leading-[0.98] text-[clamp(2.6rem,8.5vw,6.5rem)] max-w-4xl">Startup onboarding form</h1>
+      <p class="mt-6 text-white/70 text-base md:text-lg leading-relaxed max-w-xl">Share your startup context, goals, and timeline through this step-based flow. We use this information to prepare a focused proposal.</p>
+    </div>
+  </section>
+
+  <div class="bg-white border-b border-[#DDDDDD] py-4 md:py-5">
+    <div data-marquee="26">
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Submit Idea</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Get Proposal</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Build and Launch</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Weekly Demos</span><span class="opacity-30">•</span></span>
+    </div>
+  </div>
+
+  <div class="bg-[#F5F5F5] px-6 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid gap-8 lg:grid-cols-[1fr_380px] items-start">
+        <div>
+          <div data-reveal class="bg-white border border-[#DDDDDD]/60 rounded-3xl p-7 md:p-8 mb-6">
+            <span class="block text-[11px] uppercase tracking-widest font-semibold text-[#111111]/50 mb-3">What happens next?</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>We review your brief and clarify assumptions.</li>
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>You receive a proposed scope, timeline, and pricing.</li>
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>We kick off with a product planning session.</li>
+            </ul>
+          </div>
+
+          <div data-reveal data-delay="100" class="bg-white border border-[#DDDDDD]/60 rounded-3xl p-7 md:p-8">
+            <div class="flex flex-wrap gap-2 mb-7">
+              <span data-step-pill class="text-xs font-semibold rounded-full px-4 py-2 border bg-[#111111] text-white border-[#111111]">1. Your details</span>
+              <span data-step-pill class="text-xs font-semibold rounded-full px-4 py-2 border bg-[#F5F5F5]/60 text-[#111111]/60 border-[#DDDDDD]">2. Project scope</span>
+              <span data-step-pill class="text-xs font-semibold rounded-full px-4 py-2 border bg-[#F5F5F5]/60 text-[#111111]/60 border-[#DDDDDD]">3. Goals and launch</span>
+            </div>
+
+            <div id="request-success" style="display:none" class="bg-[#111111] text-white rounded-xl px-5 py-4 text-sm">✓ Brief submitted! We'll review your details and get back to you with a focused proposal.</div>
+
+            <form id="request-form" class="grid gap-5">
+              <div data-step>
+                <div class="grid gap-5">
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Name</label><input class="field-input" type="text" placeholder="Your full name" /></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Email</label><input class="field-input" type="email" placeholder="you@company.com" /></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Company</label><input class="field-input" type="text" placeholder="Company or project name" /></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Your Role</label><select class="field-input"><option value="" disabled selected>Select role</option><option>Founder / CEO</option><option>Product Lead</option><option>CTO / Engineer</option><option>Operations</option><option>Other</option></select></div>
+                </div>
+                <div class="flex justify-between gap-3 mt-6"><span></span><button type="button" data-next class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-7 py-3.5 text-xs sm:text-sm uppercase tracking-widest bg-black text-white hover:bg-black/85">Continue</button></div>
+              </div>
+
+              <div data-step style="display:none">
+                <div class="grid gap-5">
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">What are you building?</label><select class="field-input"><option value="" disabled selected>Select project type</option><option>MVP</option><option>Web App</option><option>Mobile App</option><option>SaaS Platform</option><option>AI App / Agent</option><option>Other</option></select></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Budget Range</label><select class="field-input"><option value="" disabled selected>Select budget</option><option>Under $25k</option><option>$25k - $50k</option><option>$50k - $100k</option><option>$100k+</option></select></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Project Description</label><textarea class="field-input" placeholder="Describe your product, users, and key features"></textarea></div>
+                </div>
+                <div class="flex justify-between gap-3 mt-6"><button type="button" data-back class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-7 py-3.5 text-xs sm:text-sm uppercase tracking-widest bg-white text-black border-2 border-black hover:bg-black hover:text-white">Back</button><button type="button" data-next class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-7 py-3.5 text-xs sm:text-sm uppercase tracking-widest bg-black text-white hover:bg-black/85">Continue</button></div>
+              </div>
+
+              <div data-step style="display:none">
+                <div class="grid gap-5">
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Target launch timeline</label><select class="field-input"><option value="" disabled selected>Select timeline</option><option>ASAP (4–6 weeks)</option><option>6–10 weeks</option><option>This quarter</option><option>Flexible</option></select></div>
+                  <div><label class="block text-xs font-semibold text-[#111111] mb-1.5">Primary goals</label><textarea class="field-input" placeholder="e.g. validate demand, close a pilot, raise a round, automate operations"></textarea></div>
+                </div>
+                <div class="flex justify-between gap-3 mt-6"><button type="button" data-back class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-7 py-3.5 text-xs sm:text-sm uppercase tracking-widest bg-white text-black border-2 border-black hover:bg-black hover:text-white">Back</button><button type="submit" class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-7 py-3.5 text-xs sm:text-sm uppercase tracking-widest bg-[#111111] text-white hover:bg-black">Submit Brief</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div data-reveal data-delay="200" class="hidden lg:block sticky top-28">
+          <div class="overflow-hidden rounded-3xl border border-[#DDDDDD]/60 group">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1000&q=80" alt="Product build in progress" class="w-full h-[420px] object-cover transition-all duration-700" />
+          </div>
+          <div class="bg-white border border-[#DDDDDD]/60 rounded-3xl p-7 md:p-8 mt-5">
+            <span class="block text-[11px] uppercase tracking-widest font-semibold text-[#111111]/50 mb-3">Delivery promise</span>
+            <ul class="mt-3 space-y-2">
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>Production-ready in 6–10 weeks</li>
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>Weekly demos</li>
+              <li class="flex gap-2.5 text-sm text-[#111111]/70 leading-relaxed"><span class="text-[#111111] font-bold shrink-0">✓</span>Transparent pricing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="logo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

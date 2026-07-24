@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@300;400;500;600&display=swap');
+
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  margin: 0;
+  background: #ffffff;
+}
+
+/* ---- Gradient display heading ---- */
+.hero-heading {
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  background: linear-gradient(123deg, #ffffff 7%, #d7e2ea 42%, #8a8f94 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- Marquee ---- */
+@keyframes cc-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.cc-marquee-track {
+  display: inline-flex;
+  animation: cc-marquee linear infinite;
+  will-change: transform;
+}
+.cc-marquee { overflow: hidden; white-space: nowrap; }
+
+/* ---- Rotating badge ---- */
+@keyframes cc-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.cc-spin { animation: cc-spin 16s linear infinite; }
+
+/* ---- Scroll reveal ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.25,0.1,0.25,1), transform 0.7s cubic-bezier(0.25,0.1,0.25,1);
+}
+[data-reveal].revealed { opacity: 1; transform: translateY(0); }
+
+/* ---- Page transition ---- */
+.page-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+.page-fade.page-in { opacity: 1; transform: translateY(0); }
+body.page-leaving .page-fade { opacity: 0; transform: translateY(-16px); }
+
+/* ---- Scroll progress ---- */
+#scroll-progress {
+  position: fixed; top: 0; left: 0; height: 3px; width: 100%;
+  background: #111; transform: scaleX(0); transform-origin: left; z-index: 60;
+}
+
+/* ---- Character reveal ---- */
+.char { transition: opacity 0.15s linear; }
+
+/* ---- Magnet ---- */
+.magnet { display: inline-block; will-change: transform; }
+
+/* ---- Lenis ---- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* ---- Forms ---- */
+.field-input {
+  width: 100%;
+  background: rgba(245,245,245,0.6);
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #111111;
+  transition: border-color 0.2s;
+}
+.field-input::placeholder { color: rgba(17,17,17,0.4); }
+.field-input:focus { outline: none; border-color: #111111; }
+textarea.field-input { min-height: 120px; resize: vertical; }

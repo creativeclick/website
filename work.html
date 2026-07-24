@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Work | Creative Click Multimedia</title>
+<meta name="description" content="Case studies and portfolio examples of startup software products we designed and built." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: {} } };</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="site-nav"></header>
+
+<div class="page-fade">
+<main class="relative z-10">
+
+  <section data-nav-theme="dark" class="relative bg-black text-white overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-45" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-40 md:pt-56 pb-16 md:pb-24 min-h-[62vh] flex flex-col justify-end">
+      <span class="inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-widest font-semibold text-white/70"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Case studies</span>
+      <h1 class="mt-4 font-light tracking-[-0.03em] leading-[0.98] text-[clamp(2.6rem,8.5vw,6.5rem)] max-w-4xl">Portfolio and outcomes</h1>
+      <p class="mt-6 text-white/70 text-base md:text-lg leading-relaxed max-w-xl">Examples of startup products and platforms we helped design, build, and launch.</p>
+    </div>
+  </section>
+
+  <div class="bg-white border-b border-[#DDDDDD] py-4 md:py-5">
+    <div data-marquee="26">
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Fintech</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">HealthTech</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Logistics</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">SaaS</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">AI</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Nonprofits</span><span class="opacity-30">•</span></span>
+    </div>
+  </div>
+
+  <div class="bg-[#F5F5F5] px-6 py-16 md:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div id="cases" class="space-y-16 md:space-y-28"></div>
+
+      <div class="mt-24 md:mt-32">
+        <div data-reveal class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <span class="inline-flex items-center gap-2 text-[11px] uppercase tracking-widest font-semibold text-[#111111] bg-white border border-[#DDDDDD] rounded-full px-4 py-2"><span class="w-1.5 h-1.5 rounded-full bg-[#111111]"></span>Live portfolio</span>
+            <h2 class="mt-5 text-[#111111] font-light tracking-[-0.02em] text-3xl md:text-5xl">Apps we have shipped</h2>
+          </div>
+          <p class="text-[#111111]/60 text-sm md:text-base max-w-xs">A curated list of published projects — hover to preview, click to visit.</p>
+        </div>
+        <div id="portfolio" class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+
+      <div data-reveal class="relative mt-16 bg-[#111111] rounded-3xl px-8 py-14 md:py-20 text-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-25" />
+        <div class="relative">
+          <h2 class="text-white font-light tracking-[-0.02em] text-3xl md:text-5xl">Your product could be next</h2>
+          <p class="mt-4 text-white/70 text-sm md:text-base max-w-lg mx-auto leading-relaxed">Share your idea and get a clear roadmap with timeline, budget, and delivery plan.</p>
+          <div class="mt-8"><a href="request.html" class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-8 py-3.5 sm:px-10 sm:py-4 text-xs sm:text-sm uppercase tracking-widest bg-white text-black hover:bg-white/90">Start Your Project</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="logo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+(function () {
+  var CASES = [
+    { n:'01', tag:'Fintech', title:'Fintech Onboarding Suite',
+      problem:'A fintech startup had a manual onboarding process that slowed growth and created drop-off.',
+      solution:'We built a self-serve onboarding web app with secure identity checks, dashboard analytics, and admin controls.',
+      outcome:'Onboarding completion improved by 42% and ops workload dropped by 35% in the first quarter.',
+      metric:'42%', metricLabel:'Higher onboarding completion',
+      image:'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80' },
+    { n:'02', tag:'HealthTech', title:'HealthTech Scheduling MVP',
+      problem:'The founder needed a usable MVP to test provider-patient scheduling in two pilot clinics.',
+      solution:'We delivered a responsive booking platform with role-based access, notifications, and reporting.',
+      outcome:'Launched in 9 weeks and secured two paid pilot contracts after initial rollout.',
+      metric:'9 wks', metricLabel:'From kickoff to launch',
+      image:'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80' },
+    { n:'03', tag:'Logistics', title:'Logistics SaaS Platform',
+      problem:'A logistics company relied on disconnected spreadsheets across teams and partners.',
+      solution:'We created a multi-tenant SaaS platform unifying dispatch, tracking, and SLA monitoring.',
+      outcome:'Reduced coordination delays by 50% and enabled expansion into three new regions.',
+      metric:'50%', metricLabel:'Fewer coordination delays',
+      image:'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80' }
+  ];
+  function caseRow(c, i) {
+    var flip = i % 2 === 1;
+    var sections = [['Problem',c.problem],['Solution',c.solution],['Outcome',c.outcome]].map(function (s) {
+      return '<div class="flex gap-4"><span class="shrink-0 w-20 pt-0.5 text-[11px] uppercase tracking-widest font-semibold text-[#111111]/40">' + s[0] + '</span><p class="text-[#111111]/75 text-sm md:text-[15px] leading-relaxed">' + s[1] + '</p></div>';
+    }).join('');
+    return '<div data-reveal><div class="grid md:grid-cols-2 gap-8 md:gap-14 items-center">' +
+      '<div class="relative overflow-hidden rounded-[28px] md:rounded-[36px] group ' + (flip ? 'md:order-2' : '') + '">' +
+        '<img src="' + c.image + '" loading="lazy" class="w-full h-64 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700" alt="" />' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>' +
+        '<div class="absolute left-5 bottom-5 bg-white/95 backdrop-blur rounded-2xl px-5 py-3"><div class="text-[#111111] text-2xl md:text-3xl font-light tracking-tight">' + c.metric + '</div><div class="text-[#111111]/60 text-[11px] uppercase tracking-widest font-semibold mt-0.5">' + c.metricLabel + '</div></div>' +
+        '<span class="absolute right-5 top-5 text-white/90 text-5xl md:text-6xl font-light tracking-tight">' + c.n + '</span>' +
+      '</div>' +
+      '<div class="' + (flip ? 'md:order-1' : '') + '">' +
+        '<span class="inline-block text-[11px] uppercase tracking-widest font-semibold text-[#111111]/50 border border-[#DDDDDD] rounded-full px-4 py-1.5">' + c.tag + '</span>' +
+        '<h3 class="mt-5 text-[#111111] font-light tracking-[-0.02em] text-3xl md:text-4xl leading-tight">' + c.title + '</h3>' +
+        '<div class="mt-6 space-y-4">' + sections + '</div>' +
+      '</div>' +
+    '</div></div>';
+  }
+  document.getElementById('cases').innerHTML = CASES.map(caseRow).join('');
+
+  var PORTFOLIO = [
+    { name:'Geoben Height', tag:'Hospitality', url:'https://geobenheight.com/', color:'#C9A227' },
+    { name:'Netra Technologies GH', tag:'Technology', url:'https://netratechnologiesgh.com/', color:'#1E6FD9', logo:'https://netratechnologiesgh.com/wp-content/uploads/2025/02/Netra-Technologies-Logo-black.png' },
+    { name:'Weekend Chef GH', tag:'Food & Hospitality', url:'https://weekendchefgh.com/', color:'#E2711D', logo:'https://weekendchefgh.com/wp-content/uploads/weekend-chef-logo-t.png' },
+    { name:'Agorivia', tag:'Operations', url:'https://agorivia.co/', color:'#8A7C5B', logo:'https://agorivia.co/wp-content/uploads/2026/06/logo-A-e1784293820453.png' },
+    { name:'Mawuenadatsa Foundation', tag:'Nonprofit', url:'https://mawuenadatsafoundation.org/', color:'#D4A017', logo:'https://mawuenadatsafoundation.org/wp-content/uploads/2025/01/LOGO.png' },
+    { name:'Faith Empowered Chapel Intl.', tag:'Faith', url:'https://faithempoweredchapelinternational.org/', color:'#6D28D9', logo:'https://faithempoweredchapelinternational.org/wp-content/uploads/2026/07/FECI-Purple-Logo-clean-300x300.png' },
+    { name:'WMT', tag:'Platform', url:'https://wmt.on-forge.com/', color:'#334155' },
+    { name:'Releev AI', tag:'Health AI', url:'https://releevai.com/', color:'#0FA3A3', logo:'https://releevai.com/wp-content/uploads/2020/01/Reeleev-AI-logos-OFFICIAL-1920-x-811-px-e1767816741424-300x85.png' },
+    { name:'Quickpipe AI', tag:'Sales AI', url:'https://quickpipe.ai', color:'#4F46E5' }
+  ];
+  function initials(name) {
+    var w = name.replace(/[^A-Za-z0-9 ]/g, ' ').split(' ').filter(Boolean);
+    return (w.length === 1 ? w[0].slice(0,2) : (w[0][0] + w[1][0])).toUpperCase();
+  }
+  function thumb(p) {
+    var fallback = '<span style="font-size:30px;font-weight:600;letter-spacing:-.02em;color:' + p.color + '">' + initials(p.name) + '</span>';
+    var chip = p.logo
+      ? '<img src="' + p.logo + '" alt="' + p.name + ' logo" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'\'" class="max-h-11 max-w-[168px] w-auto object-contain" />' +
+        '<span style="display:none;font-size:30px;font-weight:600;letter-spacing:-.02em;color:' + p.color + '">' + initials(p.name) + '</span>'
+      : fallback;
+    return '<div data-reveal><a href="' + p.url + '" target="_blank" rel="noopener" class="group block rounded-[28px] overflow-hidden bg-[#111111] relative">' +
+      '<div class="overflow-hidden"><div class="group-hover:scale-105 transition-transform duration-700">' +
+        '<div class="relative h-56 w-full overflow-hidden flex items-center justify-center" style="background:radial-gradient(circle at 30% 25%,' + p.color + '40,transparent 65%),linear-gradient(140deg,' + p.color + '26,#0E0E0E 70%)">' +
+          '<span class="absolute inset-0 opacity-40 pointer-events-none" style="background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px)"></span>' +
+          '<div class="relative bg-white rounded-2xl px-7 py-5 shadow-xl flex items-center justify-center min-w-[132px] min-h-[76px]">' + chip + '</div>' +
+          '<span class="absolute left-5 top-5 text-[10px] uppercase tracking-widest font-semibold text-white/60">' + p.tag + '</span>' +
+          '<span class="absolute right-5 top-5 w-2.5 h-2.5 rounded-full" style="background:' + p.color + '"></span>' +
+          '<span class="absolute inset-0 border border-white/10 pointer-events-none"></span>' +
+        '</div>' +
+      '</div></div>' +
+      '<div class="flex items-center justify-between p-5"><div><h3 class="text-white text-base font-medium">' + p.name + '</h3><p class="text-white/45 text-[11px] uppercase tracking-widest font-semibold mt-1">' + p.tag + '</p></div>' +
+        '<span class="w-11 h-11 shrink-0 rounded-full bg-white text-black flex items-center justify-center group-hover:rotate-45 transition-transform duration-300"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>' +
+      '</div></a></div>';
+  }
+  document.getElementById('portfolio').innerHTML = PORTFOLIO.map(thumb).join('');
+})();
+</script>
+<script src="main.js"></script>
+</body>
+</html>

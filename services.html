@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services | Creative Click Multimedia</title>
+<meta name="description" content="Startup software development services: MVP development, web and mobile app development, SaaS platforms, AI apps and agents, and ongoing support." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: {} } };</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="site-nav"></header>
+
+<div class="page-fade">
+<main class="relative z-10">
+
+  <!-- HERO -->
+  <section data-nav-theme="dark" class="relative bg-black text-white overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-45" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-40 md:pt-56 pb-16 md:pb-24 min-h-[62vh] flex flex-col justify-end">
+      <span class="inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-widest font-semibold text-white/70"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Services</span>
+      <h1 class="mt-4 font-light tracking-[-0.03em] leading-[0.98] text-[clamp(2.6rem,8.5vw,6.5rem)] max-w-4xl">Startup software development services</h1>
+      <p class="mt-6 text-white/70 text-base md:text-lg leading-relaxed max-w-xl">Built for founders who need clear priorities, fast delivery, scalable architecture, and strong integration support.</p>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="bg-white border-b border-[#DDDDDD] py-4 md:py-5">
+    <div data-marquee="26">
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">MVP Development</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Web Apps</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">SaaS Platforms</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">AI Agents</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Mobile Apps</span><span class="opacity-30">•</span></span>
+      <span class="inline-flex items-center text-[#111111] text-sm md:text-base uppercase tracking-widest font-semibold"><span class="mx-6 md:mx-10">Ongoing Support</span><span class="opacity-30">•</span></span>
+    </div>
+  </div>
+
+  <!-- STICKY STACK -->
+  <section data-nav-theme="dark" data-stack class="relative z-10 bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-4 sm:px-6 md:px-10 pt-16 sm:pt-20 md:pt-28 pb-10">
+    <div class="max-w-7xl mx-auto">
+      <h2 data-reveal class="hero-heading mb-10 sm:mb-14 md:mb-20" style="font-size:clamp(2.6rem,9vw,7rem)">Service</h2>
+      <div id="stack-cards"></div>
+    </div>
+  </section>
+
+  <!-- STATEMENT + CTA -->
+  <section data-nav-theme="dark" class="relative z-10 bg-[#0C0C0C] px-6 pt-8 pb-24 md:pb-32">
+    <div class="max-w-5xl mx-auto text-center">
+      <p data-animate-text class="text-[#D7E2EA] font-light tracking-[-0.02em] leading-[1.25] text-[clamp(1.35rem,3.6vw,2.75rem)]">Tell us your goals, integrations, and constraints. We will suggest the fastest path to a meaningful launch.</p>
+      <div data-reveal class="mt-10 md:mt-14">
+        <span data-magnet="4" class="inline-block"><a href="request.html" class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-8 py-3.5 sm:px-10 sm:py-4 md:px-12 md:py-4 text-xs sm:text-sm md:text-base uppercase tracking-widest bg-white text-black hover:bg-white/90">Start Your Project</a></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="logo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+/* Build the six stacking service cards */
+(function () {
+  var U = function (id, w) { return 'https://images.unsplash.com/photo-' + id + '?auto=format&fit=crop&w=' + (w || 1200) + '&q=80'; };
+  var SERVICES = [
+    { n:'01', name:'MVP Development for Startups', a:U('1531297484001-80022131f5a1'), b:U('1517245386807-bb43f82c33c4'), c:U('1552664730-d307ca884978',1400) },
+    { n:'02', name:'Custom Web Development', a:U('1461749280684-dccba630e2f6'), b:U('1498050108023-c5249f4df085'), c:U('1547658719-da2b51169166',1400) },
+    { n:'03', name:'SaaS Development', a:U('1451187580459-43490279c0fa'), b:U('1460925895917-afdab827c52f'), c:U('1551288049-bebda4e38f71',1400) },
+    { n:'04', name:'AI Apps and Agent Development', a:U('1485827404703-89b55fcc595e'), b:U('1677442136019-21780ecad995'), c:U('1620712943543-bcc4688e7485',1400) },
+    { n:'05', name:'Mobile App Development', a:U('1512941937669-90a1b58e7e9c'), b:U('1512499617640-c74ae3a79d37'), c:U('1580910051074-3eb694886505',1400) },
+    { n:'06', name:'Ongoing Support', a:U('1519389950473-47ba0277781c'), b:U('1521737604893-d14cc237f11d'), c:U('1522071820081-009f0129c71c',1400) }
+  ];
+  var R = 'rounded-[40px] sm:rounded-[50px] md:rounded-[60px]';
+  var html = SERVICES.map(function (s) {
+    return '<div data-stack-card class="h-[85vh] flex items-start justify-center sticky top-24 md:top-32">' +
+      '<div class="relative w-full ' + R + ' border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8" style="transform-origin:top center">' +
+        '<div class="flex flex-wrap items-start justify-between gap-5">' +
+          '<div class="flex items-start gap-4 sm:gap-6">' +
+            '<span class="text-[#D7E2EA]/80 font-light leading-none tracking-tighter" style="font-size:clamp(2.6rem,7vw,5.5rem)">' + s.n + '</span>' +
+            '<div class="pt-1 sm:pt-2"><span class="block text-[10px] sm:text-[11px] uppercase tracking-widest font-semibold text-[#D7E2EA]/50">Service</span>' +
+            '<h3 class="mt-1.5 text-[#D7E2EA] font-light tracking-[-0.02em] leading-tight" style="font-size:clamp(1.25rem,3.2vw,2.25rem)">' + s.name + '</h3></div>' +
+          '</div>' +
+          '<a href="request.html" data-magnet="4" class="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-sm sm:text-base hover:bg-[#D7E2EA]/10 transition-colors whitespace-nowrap">Start Project</a>' +
+        '</div>' +
+        '<div class="mt-5 sm:mt-7 md:mt-8 flex gap-3 sm:gap-4 md:gap-5">' +
+          '<div class="w-[40%] flex flex-col gap-3 sm:gap-4 md:gap-5">' +
+            '<img src="' + s.a + '" loading="lazy" class="w-full object-cover ' + R + '" style="height:clamp(130px,16vw,230px)" alt="" />' +
+            '<img src="' + s.b + '" loading="lazy" class="w-full object-cover ' + R + '" style="height:clamp(160px,22vw,340px)" alt="" />' +
+          '</div>' +
+          '<div class="w-[60%]"><img src="' + s.c + '" loading="lazy" class="w-full h-full object-cover ' + R + '" alt="" /></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+  document.getElementById('stack-cards').innerHTML = html;
+})();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
