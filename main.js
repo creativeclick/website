@@ -42,7 +42,7 @@
           '<span class="nav-tag text-[11px] font-medium whitespace-nowrap" style="color:rgba(0,0,0,.7)">AI Agents</span>' +
         '</div>' +
       '</div>' +
-      '<a id="nav-cta" href="request.html" class="pointer-events-auto inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-5 py-3 text-[11px] uppercase tracking-widest shadow-lg bg-black text-white">Start Your Project</a>';
+      '<a id="nav-cta" href="request.html" class="hidden md:inline-block pointer-events-auto rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-5 py-3 text-[11px] uppercase tracking-widest shadow-lg bg-black text-white">Start Your Project</a>';
 
     /* Menu toggle */
     var open = false;
@@ -99,7 +99,7 @@
         '<h2 class="text-left font-light tracking-[-0.04em] leading-[0.86] pb-8 md:pb-12" style="font-size:13.5vw;white-space:nowrap">' +
           '<span class="block">Creative Click</span><span class="block">Multimedia.</span>' +
         '</h2>' +
-        '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:20;pointer-events:none">' +
+        '<div class="hidden md:block" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:20;pointer-events:none">' +
           '<div style="position:relative;width:220px;height:220px;border:2px solid #fff;border-radius:9999px;background:#0A0F1C;display:flex;align-items:center;justify-content:center">' +
             '<div class="cc-spin" style="position:absolute;inset:0">' + badge + '</div>' +
             '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position:relative"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>' +
@@ -144,7 +144,7 @@
       document.querySelectorAll('.nav-tag').forEach(function (t) {
         t.style.color = dark ? 'rgba(255,255,255,0.85)' : 'rgba(0,0,0,0.7)';
       });
-      cta.className = 'pointer-events-auto inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-5 py-3 text-[11px] uppercase tracking-widest shadow-lg ' + (dark ? 'bg-white text-black' : 'bg-black text-white');
+      cta.className = 'hidden md:inline-block pointer-events-auto rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-5 py-3 text-[11px] uppercase tracking-widest shadow-lg ' + (dark ? 'bg-white text-black' : 'bg-black text-white');
     }
     update();
     window.addEventListener('scroll', update, { passive: true });
