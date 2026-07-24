@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Build an MVP for Your Startup | Creative Click Multimedia</title>
+<meta name="description" content="A founder-friendly framework to scope, launch, and improve an MVP without burning months on the wrong features." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: {} } };</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="site-nav"></header>
+
+<div class="page-fade">
+<main class="relative z-10">
+
+  <section data-nav-theme="dark" class="relative bg-black text-white overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1920&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-45" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/70"></div>
+    <div class="relative max-w-3xl mx-auto px-6 pt-40 md:pt-56 pb-16 md:pb-24 min-h-[52vh] flex flex-col justify-end">
+      <a href="blog.html" class="inline-flex items-center gap-2 text-xs md:text-sm uppercase tracking-widest font-semibold text-white/70 hover:text-white transition-colors w-fit">&larr; Back to Blog</a>
+      <span class="mt-4 block text-[11px] uppercase tracking-widest font-semibold text-white/50">March 1, 2026 &middot; 11 min read</span>
+      <h1 class="mt-3 font-light tracking-[-0.03em] leading-[1.02] text-[clamp(2.2rem,6vw,4rem)]">How to Build an MVP for Your Startup</h1>
+    </div>
+  </section>
+
+  <div class="bg-[#F5F5F5] px-6 py-16 md:py-24">
+    <div class="max-w-3xl mx-auto">
+      <article class="bg-white border border-[#DDDDDD]/60 rounded-3xl p-7 md:p-12">
+        <div class="prose-article text-[#111111]/80 text-base leading-relaxed space-y-6">
+
+          <p class="text-lg text-[#111111]/90">Founders often treat an MVP as a mini version of their final product instead of what it actually is: an experiment designed to reduce risk. The real job of an MVP is to answer one specific business question &mdash; is this problem real and painful enough to drive behavior change or payment?</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Start with a core hypothesis</h2>
+          <p>Before writing a single line of code, articulate your central assumption in one sentence. For example: <em>&quot;Independent clinics will pay for automated scheduling if we reduce no-shows by at least 20%.&quot;</em> This statement becomes your filter for every product decision that follows.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Do the discovery research first</h2>
+          <p>Conduct 10-15 interviews within your target segment before development begins. Focus conversations on existing workflows, current workarounds, and recent frustration moments &mdash; not on pitching your solution. Listen for language patterns, repeated pain points, and evidence of urgency. Weak demand signals sound &quot;annoying but manageable&quot;; stronger signals involve measurable financial impact.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Pick one user journey and perfect it</h2>
+          <p>Solve one workflow extremely well rather than delivering multiple incomplete features. Early users tolerate missing functionality, but they reject broken outcomes.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Prioritize ruthlessly</h2>
+          <p>Sort every proposed feature into three buckets: essential for testing the hypothesis, valuable but deferrable, and optional. Most teams find that only 20-30% of their ideas actually belong in the launch version. Keep the technical architecture clean while enforcing strict feature boundaries.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Set a fixed timeline</h2>
+          <p>Establish a hard deadline for version one &mdash; typically 6-8 weeks for most B2B products. Regular demos, explicit milestones, and transparent trade-off discussions keep momentum from stalling.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Measure behavior, not vanity metrics</h2>
+          <p>Define success through behavioral outcomes. Raw signups are a weak indicator; workflow completion rates, time-to-value, 7-day active retention, and willingness-to-pay signals like trial or paid pilot conversion are far stronger.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Plan the first month after launch</h2>
+          <p>Decide your post-launch review cadence before launch day. Run weekly cycles examining user actions, friction points, and repeated requests, and prioritize iterations based on their impact on your core metric.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">Treat every new request as a hypothesis</h2>
+          <p>When a request comes in, ask whether building it produces a measurable improvement. If the answer is unclear, park the idea. This discipline protects runway and keeps the product focused.</p>
+
+          <h2 class="text-[#111111] text-xl md:text-2xl font-medium pt-4">What success actually looks like</h2>
+          <p>An MVP succeeds when it delivers clarity &mdash; whether that clarity is positive (adoption and payment) or negative (weaker than expected demand). Both outcomes are wins if you reach them quickly and affordably. The real failure is spending six months building features that never had to exist.</p>
+
+        </div>
+      </article>
+
+      <div class="mt-10 flex justify-center">
+        <a href="request.html" class="inline-block rounded-full font-medium whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 px-8 py-3.5 sm:px-10 sm:py-4 text-xs sm:text-sm uppercase tracking-widest bg-[#111111] text-white hover:bg-[#111111]/90">Get Free Build Plan</a>
+      </div>
+
+      <div class="mt-16">
+        <span class="block text-[11px] uppercase tracking-widest font-semibold text-[#111111]/50 mb-5">More from the blog</span>
+        <div id="related-posts" class="grid gap-5 md:grid-cols-3"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="logo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="blog-posts.js"></script>
+<script>renderRelatedPosts('how-to-build-an-mvp');</script>
+<script src="main.js"></script>
+</body>
+</html>
