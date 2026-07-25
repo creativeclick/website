@@ -89,7 +89,7 @@
           '<a href="contact.html" class="text-white/80 hover:text-white transition-colors">Contact <span class="text-white/40">/</span></a>' +
         '</div>' +
         '<div class="flex flex-wrap gap-10 md:gap-16">' +
-          '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">Contact</h3><a href="tel:+233248949895" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors">+233 24 894 9895</a></div>' +
+          '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">Contact</h3><a href="tel:+233246337881" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors">+233 24 633 7881</a></div>' +
           '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">LinkedIn</h3><a href="https://www.creativeclickmultimedia.com/" target="_blank" rel="noopener" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors break-all">linkedin.com/company/creativeclick</a></div>' +
           '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">Email</h3><a href="mailto:hello@creativeclickmultimedia.com" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors break-all">hello@creativeclickmultimedia.com</a></div>' +
         '</div>' +
