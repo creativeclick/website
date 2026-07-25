@@ -26,7 +26,7 @@
         '<span id="nav-logo" style="height:30px;color:#111" class="block transition-colors duration-300">' + LOGO + '</span>' +
         '<span id="nav-brand" class="hidden md:block text-sm font-semibold tracking-tight whitespace-nowrap transition-colors duration-300" style="color:#111">Creative Click Multimedia</span>' +
       '</a>' +
-      '<div class="absolute right-0 md:right-auto md:left-1/2 md:-translate-x-1/2 flex items-center gap-3 pointer-events-auto">' +
+      '<div class="absolute right-4 md:right-auto md:left-1/2 md:-translate-x-1/2 flex items-center gap-3 pointer-events-auto">' +
         '<div class="relative">' +
           '<button id="menu-btn" class="flex items-center gap-2 rounded-full pl-1 pr-3.5 py-1 shadow-lg transition-colors duration-300 bg-black">' +
             '<span id="menu-circle" class="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-white text-black transition-transform duration-300"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>' +
