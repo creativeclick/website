@@ -26,13 +26,13 @@
         '<span id="nav-logo" style="height:30px;color:#111" class="block transition-colors duration-300">' + LOGO + '</span>' +
         '<span id="nav-brand" class="hidden md:block text-sm font-semibold tracking-tight whitespace-nowrap transition-colors duration-300" style="color:#111">Creative Click Multimedia</span>' +
       '</a>' +
-      '<div class="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 pointer-events-auto">' +
+      '<div class="absolute right-0 md:right-auto md:left-1/2 md:-translate-x-1/2 flex items-center gap-3 pointer-events-auto">' +
         '<div class="relative">' +
           '<button id="menu-btn" class="flex items-center gap-2 rounded-full pl-1 pr-3.5 py-1 shadow-lg transition-colors duration-300 bg-black">' +
             '<span id="menu-circle" class="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-white text-black transition-transform duration-300"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>' +
             '<span id="menu-label" class="text-[11px] font-medium text-white">Menu</span>' +
           '</button>' +
-          '<div id="menu-panel" class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl p-2 opacity-0 scale-95 -translate-y-2 pointer-events-none transition-all duration-300 origin-top">' +
+          '<div id="menu-panel" class="absolute right-0 left-auto md:left-1/2 md:right-auto md:-translate-x-1/2 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl p-2 opacity-0 scale-95 -translate-y-2 pointer-events-none transition-all duration-300 origin-top">' +
             links +
             '<a href="request.html" class="block px-4 py-2.5 mt-1 text-sm font-medium text-white bg-black rounded-xl hover:bg-black/85 transition-colors">Start Your Project</a>' +
           '</div>' +
