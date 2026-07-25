@@ -90,7 +90,7 @@
         '</div>' +
         '<div class="flex flex-wrap gap-10 md:gap-16">' +
           '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">Contact</h3><a href="tel:+233246337881" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors">+233 24 633 7881</a></div>' +
-          '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">LinkedIn</h3><a href="https://www.creativeclickmultimedia.com/" target="_blank" rel="noopener" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors break-all">linkedin.com/company/creativeclick</a></div>' +
+          '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">LinkedIn</h3><a href="https://www.linkedin.com/company/creative-click-multimedia/" target="_blank" rel="noopener" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors break-all">Creative Click Multimedia</a></div>' +
           '<div><h3 class="text-[14px] uppercase tracking-widest font-light text-white/45">Email</h3><a href="mailto:hello@creativeclickmultimedia.com" class="block mt-3 text-[16px] text-white/90 hover:text-white transition-colors break-all">hello@creativeclickmultimedia.com</a></div>' +
         '</div>' +
         '<button id="to-top" aria-label="Back to top" class="w-10 h-10 shrink-0 rounded-full bg-white text-black flex items-center justify-center hover:-translate-y-1 transition-transform self-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>' +
